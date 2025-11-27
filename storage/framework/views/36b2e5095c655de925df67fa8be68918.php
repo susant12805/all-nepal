@@ -1,0 +1,61 @@
+<?php $__env->startSection('title', 'Edit Client'); ?>
+<?php $__env->startSection('header', 'Edit Client'); ?>
+
+<?php $__env->startSection('backend-content'); ?>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-body">
+                    <form action="<?php echo e(route('client.update', $client->id)); ?>" method="POST" enctype="multipart/form-data">
+                        <?php echo csrf_field(); ?>
+                        <?php echo method_field('PUT'); ?>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Client Name *</label>
+                                    <input type="text" class="form-control" id="name" name="name" value="<?php echo e($client->name); ?>" required>
+                                </div>
+                                
+                                <div class="mb-3">
+                                    <label for="short_description" class="form-label">Short Description *</label>
+                                    <textarea class="form-control" id="short_description" name="short_description" rows="3" maxlength="500" required><?php echo e($client->short_description); ?></textarea>
+                                    <small class="text-muted">Max 500 characters</small>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-6">
+                                
+                                <div class="mb-3">
+                                    <label for="image" class="form-label">Client Logo</label>
+                                    <input type="file" class="form-control" id="image" name="image">
+                                    <?php if($client->image): ?>
+                                        <div class="mt-2">
+                                            <img src="<?php echo e(asset('storage/' . $client->image)); ?>" alt="<?php echo e($client->name); ?>" width="100" class="img-thumbnail">
+                                            <p class="text-muted mt-1">Current image</p>
+                                        </div>
+                                    <?php endif; ?>
+                                    <small class="text-muted">Max 2MB (JPEG, PNG, JPG, GIF, SVG)</small>
+                                </div>
+                                
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="mb-3 form-check">
+                                            <input type="checkbox" class="form-check-input" id="is_active" name="is_active" value="1" <?php echo e($client->is_active ? 'checked' : ''); ?>>
+                                            <label class="form-check-label" for="is_active">Active client</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Update client</button>
+                        <a href="<?php echo e(route('client.index')); ?>" class="btn btn-secondary">Cancel</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('user.layouts.app', array_diff_key(get_defined_vars(), ['__data' => 1, '__path' => 1]))->render(); ?><?php /**PATH /home/livescor/techversesolutionspvtltd.com/resources/views/user/pages/client/edit.blade.php ENDPATH**/ ?>

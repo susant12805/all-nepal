@@ -1,0 +1,858 @@
+<?php $__env->startSection('content'); ?>
+<?php $__env->startPush('styles'); ?>
+/*==================== Testimonial Section ====================*/
+<style>
+.testimonial-section {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+}
+
+.testimonial-section .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.testimonial-section .section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.testimonial-section .section-title h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+}
+
+.clients-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.client-card {
+    background-color: #fff;
+    padding: 20px;
+    width: 180px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.client-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.client-card img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.client-card h4 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #555;
+}
+</style>
+    
+<?php $__env->stopPush(); ?>
+    <div class="preloader-activate preloader-active open_tm_preloader">
+        <div class="preloader-area-wrap">
+            <div class="spinner d-flex justify-content-center align-items-center h-100">
+                <div class="bounce1"></div>
+                <div class="bounce2"></div>
+                <div class="bounce3"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="main-wrapper">
+        <div class="site-wrapper-reveal">
+            <!--============ Infotechno Hero Start ============-->
+            <div class="infotechno-hero infotechno-bg">
+                <div class="container-fluid">
+                    <div class="row align-items-center"><!--baseline-->
+                        <div class="col-lg-6 col-md-6">
+                            <div class="infotechno-hero-text  wow move-up">
+                                <h6>IT Design & Consulting </h6>
+                                <h1 class="font-weight--reguler mb-15">Facilitate All <br> Local IT-related Service
+                                    Providers </h1>
+                                <p>Highly Tailored IT Design, Management & Support Services. </p>
+                                <div class="hero-button mt-30">
+                                    <a href="<?php echo e(url('/service')); ?>" class="ht-btn ht-btn-md">Get details</a>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="infotechno-hero-inner-images">
+                                <div class="infotechno-inner-one">
+                                    <img class="img-fluid"
+                                         src="<?php echo e(asset('frontend/assets/images/hero/home-infotechno-main-slider-slide-01-image-01.webp')); ?>"
+                                         alt="">
+                                </div>
+                                <div class="infotechno-inner-two wow move-up">
+                                    <img class="img-fluid"
+                                         src="<?php echo e(asset('frontend/assets/images/hero/unnamed3.jpg')); ?>"
+                                         alt="">
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <!--============ Infotechno Hero End ============-->
+            <!--===========  feature-images-wrapper  Start =============-->
+            <div class="feature-images-wrapper bg-gray section-space--ptb_100">
+                <div class="container">
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <!-- section-title-wrap Start -->
+                            <div class="section-title-wrap text-center">
+                                <h6 class="section-sub-title mb-20">Our services</h6>
+                                <h3 class="heading">For your very specific industry, <br> we have <span
+                                        class="text-color-primary"> highly-tailored IT solutions.</span></h3>
+                            </div>
+                            <!-- section-title-wrap Start -->
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="feature-images__one">
+                                <div class="row">
+
+                                    <div class="col-lg-4 col-md-6 wow move-up">
+                                        <!-- ht-box-icon Start -->
+                                        <div class="ht-box-images style-01">
+                                            <div class="image-box-wrap">
+                                                <div class="box-image">
+                                                    <img class="img-fulid"
+                                                        src="frontend/assets/images/icons/mitech-box-image-style-01-image-01-100x108.webp"
+                                                        alt="">
+                                                </div>
+                                                <div class="content">
+                                                    <h5 class="heading">Software Design </h5>
+                                                    <div class="text">We provide the most responsive and functional software
+                                                        design for companies and businesses worldwide.
+                                                    </div>
+                                                    <div class="circle-arrow">
+                                                        <div class="middle-dot"></div>
+                                                        <div class="middle-dot dot-2"></div>
+                                                        <a href="#">
+                                                            <i class="fas fa-arrow-right"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- ht-box-icon End -->
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-6 wow move-up">
+                                        <!-- ht-box-icon Start -->
+                                        <div class="ht-box-images style-01">
+                                            <div class="image-box-wrap">
+                                                <div class="box-image">
+                                                    <img class="img-fulid"
+                                                        src="frontend/assets/images/icons/mitech-box-image-style-01-image-02-100x108.webp"
+                                                        alt="">
+                                                </div>
+                                                <div class="content">
+                                                    <h5 class="heading">IT Management</h5>
+                                                    <div class="text">It’s possible to simultaneously manage and transform
+                                                        information from one server to another.
+                                                    </div>
+                                                    <div class="circle-arrow">
+                                                        <div class="middle-dot"></div>
+                                                        <div class="middle-dot dot-2"></div>
+                                                        <a href="#">
+                                                            <i class="fas fa-arrow-right"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- ht-box-icon End -->
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-6 wow move-up">
+                                        <!-- ht-box-icon Start -->
+                                        <div class="ht-box-images style-01">
+                                            <div class="image-box-wrap">
+                                                <div class="box-image">
+                                                    <img class="img-fulid"
+                                                        src="frontend/assets/images/icons/mitech-box-image-style-01-image-03-100x108.webp"
+                                                        alt="">
+                                                </div>
+                                                <div class="content">
+                                                    <h5 class="heading">Data Security</h5>
+                                                    <div class="text">Back up your database, store in a safe and secure
+                                                        place while still maintaining its accessibility.
+                                                    </div>
+                                                    <div class="circle-arrow">
+                                                        <div class="middle-dot"></div>
+                                                        <div class="middle-dot dot-2"></div>
+                                                        <a href="#">
+                                                            <i class="fas fa-arrow-right"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- ht-box-icon End -->
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="section-under-heading text-center section-space--mt_60 section-space--pt_30">
+                                Challenges are just opportunities in disguise. <a href="#">Take the challenge!</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--===========  feature-images-wrapper  End =============-->
+
+            <!-- ============ Our Experience Wrapper Start =============== -->
+            <div class="section-space--ptb_100 infotechno-section-bg-01">
+
+                <div class="our-experience-wrapper">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <div class="section-title small-mb__40 tablet-mb__40">
+                                    <h6 class="section-sub-title mb-20">Our company</h6>
+                                    <h3 class="heading">We’ve been thriving in <span class="text-color-primary">since past
+                                            few years</span></h3>
+                                    <p class="text mt-20">We are specialized in technological and IT-related services such
+                                        as product engineering, warranty management, building cloud, infrastructure,
+                                        network, etc. We put a strong focus on the needs of your business to figure out
+                                        solutions that best fits your demand and nail it.</p>
+
+                                    <div class="sider-title-button-box mt-30">
+                                        <a href="#" class="ht-btn ht-btn-md">Join us now</a>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="col-lg-5 offset-lg-2">
+                                <div class="ht-list style-auto-numbered-02">
+                                    <div class="list-item">
+                                        <a class="link" href="#">
+                                            <div class="list-header">
+                                                <div class="marker">
+                                                    01
+                                                </div>
+                                                <div class="title-wrap">
+                                                    <h6 class="title">How we can help your business? </h6>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="list-item">
+                                        <a class="link" href="#">
+                                            <div class="list-header">
+                                                <div class="marker">
+                                                    02
+                                                </div>
+                                                <div class="title-wrap">
+                                                    <h6 class="title">Why become our partner? </h6>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="list-item">
+                                        <a class="link" href="#">
+                                            <div class="list-header">
+                                                <div class="marker"> 03</div>
+                                                <div class="title-wrap">
+                                                    <h6 class="title"> What are the best of All Nepal Tech Solutions? </h6>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--===========  feature-large-images-wrapper  Start =============-->
+                <div class="feature-large-images-wrapper section-space--pt_100">
+                    <div class="container">
+
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <!-- section-title-wrap Start -->
+                                <div class="section-title-wrap text-center section-space--mb_30">
+                                    <h6 class="section-sub-title mb-20">Hire us, why not?</h6>
+                                    <h3 class="heading">How we claim to <span class="text-color-primary"> excel?</span>
+                                    </h3>
+                                </div>
+                                <!-- section-title-wrap Start -->
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="row row--35">
+
+                                    <div class="col-lg-4 col-md-6 mt-30">
+                                        <!-- Box large image warap Start -->
+                                        <a href="#" class="box-large-image__wrap wow move-up">
+                                            <div class="box-large-image__box">
+                                                <div class="box-large-image__midea">
+                                                    <div class="images-midea">
+                                                        <img src="frontend/assets/images/box-image/photo.jpg"
+                                                            width="330" height="330" class="img-fluid"
+                                                            alt="">
+
+                                                        <div class="button-wrapper">
+                                                            <div class="btn tm-button">                                     </div>
+                                                        </div>
+                                                        <div class="heading-wrap">
+                                                            <h5 class="heading" style="color: #f5e9e9;">Data Management Systems</h5>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="box-large-image__content mt-30 text-center">
+                                                    <p>Our technical experts have a flair for developing <strong>clean-coded
+                                                            websites</strong> based on customers’ needs, global guidelines
+                                                        and trends.</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <!-- Box large image warap End -->
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-6  mt-30">
+                                        <!-- Box large image warap Start -->
+                                        <a href="#" class="box-large-image__wrap wow move-up">
+                                            <div class="box-large-image__box">
+                                                <div class="box-large-image__midea">
+                                                    <div class="images-midea">
+                                                        <img src="frontend/assets/images/box-image/photo2.webp"
+                                                            width="330" height="330" class="img-fluid"
+                                                            alt="">
+
+                                                        <div class="button-wrapper">
+                                                            <div class="btn tm-button">
+                                                                <span class="button-text">Learn more</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="heading-wrap">
+                                                            <h5 class="heading" style="color: #f5e9e9;">Efficient Database Security</h5>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="box-large-image__content mt-30 text-center">
+                                                    <p>Our technical experts have a flair for developing <strong>clean-coded
+                                                            websites</strong> based on customers’ needs, global guidelines
+                                                        and trends.</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <!-- Box large image warap End -->
+                                    </div>
+
+
+                                    <div class="col-lg-4 col-md-6  mt-30">
+                                        <!-- Box large image warap Start -->
+                                        <a href="#" class="box-large-image__wrap wow move-up">
+                                            <div class="box-large-image__box">
+                                                <div class="box-large-image__midea">
+                                                    <div class="images-midea">
+                                                        <img src="frontend/assets/images/box-image/photo3.webp"
+                                                            width="330" height="330" class="img-fluid"
+                                                            alt="">
+
+                                                        <div class="button-wrapper">
+                                                            <div class="btn tm-button">
+                                                                <span class="button-text">Learn more</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="heading-wrap">
+                                                            <h5 class="heading" style="color: #f5e9e9;;">Reliable Multi-function Technology</h5>
+
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="box-large-image__content mt-40 text-center">
+                                                    <p>Our technical experts have a flair for developing <strong>clean-coded
+                                                            websites</strong> based on customers’ needs, global guidelines
+                                                        and trends.</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <!-- Box large image warap End -->
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--===========  feature-large-images-wrapper  End =============-->
+
+
+            </div>
+            <!-- ============ Our Experience Wrapper End =============== -->
+            <!--=========== fun fact Wrapper Start ==========-->
+            <div class="fun-fact-wrapper">
+                <div class="container">
+                    <div class="fun-fact-grid-4">
+                        <div class="grid-item  wow move-up">
+                            <div class="fun-fact--one text-center">
+                                <h5 class="fun-fact__title">Successfully work <br> with </h5>
+                                <div class="fun-fact__count counter">100</div>
+                                <span class="fun-fact__text">HAPPY CLIENTS</span>
+                            </div>
+                        </div>
+                        <div class="grid-item  wow move-up">
+                            <div class="fun-fact--one text-center">
+                                <h5 class="fun-fact__title">Successfully <br> completed</h5>
+                                <div class="fun-fact__count counter">40</div>
+                                <span class="fun-fact__text">Finished projects</span>
+                            </div>
+                        </div>
+                        <div class="grid-item  wow move-up">
+                            <div class="fun-fact--one text-center">
+                                <h5 class="fun-fact__title">Recruit more <br> than</h5>
+                                <div class="fun-fact__count counter">300</div>
+                                <span class="fun-fact__text">SKilled Experts</span>
+                            </div>
+                        </div>
+                        <div class="grid-item  wow move-up">
+                            <div class="fun-fact--one text-center">
+                                <h5 class="fun-fact__title">Services <br> provided </h5>
+                                <div class="fun-fact__count counter">150</div>
+                                <span class="fun-fact__text">Quality certified</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--=========== fun fact Wrapper End ==========-->
+
+            <!--===========  Projects wrapper Start =============-->
+            <div class="projects-wrapper projectinfotechno-bg section-space--ptb_100">
+                <div class="container">
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <!-- section-title-wrap Start -->
+                            <div class="section-title-wrap text-center section-space--mb_40">
+                                <h6 class="section-sub-title mb-20">Case studies</h6>
+                                <h3 class="heading">Proud projects that<span class="text-color-primary"> make us stand
+                                        out</span></h3>
+                            </div>
+                            <!-- section-title-wrap End -->
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="projects-wrap swiper-container projects-slider__container">
+                                <div class="swiper-wrapper">
+
+                                    <div class="swiper-slide">
+                                        <div class="projects-wrap style-01 wow move-up">
+                                            <div class="projects-image-box">
+                                                <div class="projects-image">
+                                                    <img class="img-fluid"
+                                                        src="frontend/assets/images/projects/case-study-01-480x298.webp"
+                                                        alt="">
+                                                </div>
+                                                <div class="content">
+                                                    <h6 class="heading">Internal Networking for Shangrila Blu</h6>
+                                                    <div class="post-categories">IT Networking</div>
+                                                    <div class="text">Designed and implemented internal networking
+                                                        solutions for optimal connectivity and security.</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="projects-wrap style-01 wow move-up">
+                                            <div class="projects-image-box">
+                                                <div class="projects-image">
+                                                    <img class="img-fluid"
+                                                        src="frontend/assets/images/projects/case-study-02-480x298.webp"
+                                                        alt="">
+                                                </div>
+                                                <div class="content">
+                                                    <h6 class="heading">Network & Security for Rele Khola Hydropower
+                                                        Project</h6>
+                                                    <div class="post-categories">Cyber Security</div>
+                                                    <div class="text">Implemented robust network security measures and
+                                                        monitoring for the hydropower project.</div>
+            
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="projects-wrap style-01 wow move-up">
+                                            <div class="projects-image-box">
+                                                <div class="projects-image">
+                                                    <img class="img-fluid"
+                                                        src="frontend/assets/images/projects/case-study-03-480x298.webp"
+                                                        alt="">
+                                                </div>
+                                                <div class="content">
+                                                    <h6 class="heading">Internal Networking for Hotel Massif</h6>
+                                                    <div class="post-categories">IT Networking</div>
+                                                    <div class="text">Setup of secure internal networking and
+                                                        connectivity for efficient hotel operations.</div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="projects-wrap style-01 wow move-up">
+                                            <div class="projects-image-box">
+                                                <div class="projects-image">
+                                                    <img class="img-fluid"
+                                                        src="frontend/assets/images/projects/case-study-04-480x298.webp"
+                                                        alt="">
+                                                </div>
+                                                <div class="content">
+                                                    <h6 class="heading">Website for Bandipur Eco Hotel</h6>
+                                                    <div class="post-categories">Web Development</div>
+                                                    <div class="text">Developed a responsive and modern website
+                                                        showcasing eco-friendly services and booking options.</div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="projects-wrap style-01 wow move-up">
+                                            <div class="projects-image-box">
+                                                <div class="projects-image">
+                                                    <img class="img-fluid"
+                                                        src="frontend/assets/images/projects/case-study-05-480x298.webp"
+                                                        alt="">
+                                                </div>
+                                                <div class="content">
+                                                    <h6 class="heading">Website & Internal Networking for Utopia</h6>
+                                                    <div class="post-categories">IT + Web</div>
+                                                    <div class="text">Combined web development and internal networking
+                                                        solutions for Utopia organization.</div>
+    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="projects-wrap style-01 wow move-up">
+                                            <div class="projects-image-box">
+                                                <div class="projects-image">
+                                                    <img class="img-fluid"
+                                                        src="frontend/assets/images/projects/case-study-06-480x298.webp"
+                                                        alt="">
+                                                </div>
+                                                <div class="content">
+                                                    <h6 class="heading">Security Device for INF</h6>
+                                                    <div class="post-categories">Cyber Security</div>
+                                                    <div class="text">Deployment of advanced security devices and
+                                                        monitoring for the INF office.</div>
+          
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="swiper-pagination swiper-pagination-project mt_20"></div>
+                            </div>
+
+                            <div class="section-under-heading text-center section-space--mt_40">
+                                Challenges are just opportunities in disguise. <a href="#">Take the challenge!</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--===========  Projects wrapper End =============-->
+
+
+            <!--====================  Conact us Section Start ====================-->
+            <div class="contact-us-section-wrappaer infotechno-contact-us-bg section-space--ptb_120">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 col-lg-6">
+                            <div class="conact-us-wrap-one">
+                                <h3 class="heading">Obtaining further information by <span class="text-color-primary">make
+                                        a contact</span> with our experienced IT staffs. </h3>
+
+                                <div class="sub-heading">We’re available for 8 hours a day!<br>Contact to require a
+                                    detailed analysis and assessment of your plan.</div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-lg-6">
+                            <div class="contact-info-one text-center">
+                                <div class="icon">
+                                    <span class="fas fa-phone"></span>
+                                </div>
+                                <h6 class="heading font-weight--reguler">Reach out now!</h6>
+                                <h2 class="call-us"><a href="tel:190068668">014500062</a></h2>
+                                <div class="contact-us-button mt-20">
+                                    <a href="#" class="btn btn--secondary">Contact us</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--====================  Conact us Section End  ====================-->
+        </div>
+
+
+
+
+
+
+
+    </div>
+    <!--====================  scroll top ====================-->
+    <a href="#" class="scroll-top" id="scroll-top">
+        <i class="arrow-top fas fa-chevron-up"></i>
+        <i class="arrow-bottom fas fa-chevron-up"></i>
+    </a>
+    <!--====================  End of scroll top  ====================-->
+
+    <!--====================  mobile menu overlay ====================-->
+    <div class="mobile-menu-overlay" id="mobile-menu-overlay">
+        <div class="mobile-menu-overlay__inner">
+            <div class="mobile-menu-overlay__header">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-md-6 col-8">
+                            <!-- logo -->
+                            <div class="logo">
+                                <a href="index.html">
+                                    <img src="frontend/assets/images/logo/logo-dark.webp" class="img-fluid"
+                                        alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-4">
+                            <!-- mobile menu content -->
+                            <div class="mobile-menu-content text-end">
+                                <span class="mobile-navigation-close-icon" id="mobile-menu-close-trigger"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile-menu-overlay__body">
+                <nav class="offcanvas-navigation">
+                    <ul>
+                        <li class="has-children">
+                            <a href="index.html">Home</a>
+                            <ul class="sub-menu">
+                                <li><a href="index-infotechno.html"><span>Infotechno</span></a></li>
+                                <li><a href="index-processing.html"><span>Processing</span></a></li>
+                                <li><a href="index-appointment.html"><span>Appointment</span></a></li>
+                                <li><a href="index-services.html"><span>Services</span></a></li>
+                                <li><a href="index-resolutions.html"><span>Resolutions</span></a></li>
+                                <li><a href="index-cybersecurity.html"><span>cybersecurity</span></a></li>
+                                <li><a href="index-modern-it-company.html"><span>Modern IT Company</span></a></li>
+                                <li><a href="index-machine-learning.html"><span>Machine Learning</span></a></li>
+                                <li><a href="index-software-innovation.html"><span>Software Innovation</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="has-children">
+                            <a href="#">Company</a>
+                            <ul class="sub-menu">
+                                <li class="has-children">
+                                    <a href="about-us-01.html"><span>About us</span></a>
+                                    <ul class="sub-menu">
+                                        <li><a href="about-us-01.html"><span>About us 01</span></a></li>
+                                        <li><a href="about-us-02.html"><span>About us 02</span></a></li>
+                                        <li class="has-children">
+                                            <a href="#"><span>Submenu Level Two</span></a>
+                                            <ul class="sub-menu">
+                                                <li><a href="#"><span>Submenu Level Three</span></a></li>
+                                                <li><a href="#"><span>Submenu Level Three</span></a></li>
+                                                <li><a href="#"><span>Submenu Level Three</span></a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="contact-us.html"><span>Contact us</span></a></li>
+                                <li><a href="leadership.html"><span>Leadership</span></a></li>
+                                <li><a href="why-choose-us.html"><span>Why choose us</span></a></li>
+                                <li><a href="our-history.html"><span>Our history</span></a></li>
+                                <li><a href="faqs.html"><span>FAQs</span></a></li>
+                                <li><a href="careers.html"><span>Careers</span></a></li>
+                                <li><a href="pricing-plans.html"><span>Pricing plans</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="has-children">
+                            <a href="#">IT solutions</a>
+                            <ul class="sub-menu">
+                                <li><a href="it-services.html"><span>IT Services</span></a></li>
+                                <li><a href="managed-it-service.html"><span>Managed IT Services</span></a></li>
+                                <li><a href="industries.html"><span>Industries</span></a></li>
+                                <li><a href="business-solution.html"><span>Business solution</span></a></li>
+                                <li><a href="it-services-details.html"><span>IT Services Details</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="has-children">
+                            <a href="#">Elements</a>
+                            <ul class="sub-menu">
+                                <li class="has-children">
+                                    <a href="#">Element Group 01</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="element-accordion.html"><span>Accordions & Toggles</span></a></li>
+                                        <li><a href="element-box-icon.html"><span>Box Icon</span></a></li>
+                                        <li><a href="element-box-image.html"><span>Box Image</span></a></li>
+                                        <li><a href="element-box-large-image.html"><span>Box Large Image</span></a></li>
+                                        <li><a href="element-buttons.html"><span>Buttons</span></a></li>
+                                        <li><a href="element-cta.html"><span>Call to action</span></a></li>
+                                        <li><a href="element-client-logo.html"><span>Client Logo</span></a></li>
+                                        <li><a href="element-countdown.html"><span>Countdown</span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="has-children">
+                                    <a href="#">Element Group 02</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="element-counters.html"><span>Counters</span></a></li>
+                                        <li><a href="element-dividers.html"><span>Dividers</span></a></li>
+                                        <li><a href="element-flexible-image-slider.html"><span>Flexible image
+                                                    slider</span></a></li>
+                                        <li><a href="element-google-map.html"><span>Google Map</span></a></li>
+                                        <li><a href="element-gradation.html"><span>Gradation</span></a></li>
+                                        <li><a href="element-instagram.html"><span>Instagram</span></a></li>
+                                        <li><a href="element-lists.html"><span>Lists</span></a></li>
+                                        <li><a href="element-message-box.html"><span>Message box</span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="has-children">
+                                    <a href="#">Element Group 03</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="element-popup-video.html"><span>Popup Video</span></a></li>
+                                        <li><a href="element-pricing-box.html"><span>Pricing Box</span></a></li>
+                                        <li><a href="element-progress-bar.html"><span>Progress Bar</span></a></li>
+                                        <li><a href="element-progress-circle.html"><span>Progress Circle</span></a></li>
+                                        <li><a href="element-rows-columns.html"><span>Rows & Columns</span></a></li>
+                                        <li><a href="element-social-networks.html"><span>Social Networks</span></a></li>
+                                        <li><a href="element-tabs.html"><span>Tabs</span></a></li>
+                                        <li><a href="element-team-member.html"><span>Team member</span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="has-children">
+                                    <a href="#">Element Group 04</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="element-testimonials.html"><span>Testimonials</span></a></li>
+                                        <li><a href="element-timeline.html"><span>Timeline</span></a></li>
+                                        <li><a href="element-carousel-sliders.html"><span>Carousel Sliders</span></a></li>
+                                        <li><a href="element-typed-text.html"><span>Typed Text</span></a></li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li class="has-children">
+                            <a href="#">Case Studies</a>
+                            <ul class="sub-menu">
+                                <li><a href="case-studies.html"><span>Case Studies 01</span></a></li>
+                                <li><a href="case-studies-02.html"><span>Case Studies 02</span></a></li>
+                                <li><a href="single-smart-vision.html"><span>Single Layout</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="has-children">
+                            <a href="#">Blogs</a>
+                            <ul class="sub-menu">
+                                <li><a href="blog-list-large-image.html"><span>List Large Image</span></a></li>
+                                <li><a href="blog-list-left-large-image.html"><span>Left Large Image</span></a></li>
+                                <li><a href="blog-grid-classic.html"><span>Grid Classic</span></a></li>
+                                <li><a href="blog-grid-masonry.html"><span>Grid Masonry</span></a></li>
+                                <li class="has-children">
+                                    <a href="blog-post-layout-one.html"><span>Single Layouts</span></a>
+                                    <ul class="sub-menu">
+                                        <li><a href="blog-post-layout-one.html"><span>Left Sidebar</span></a></li>
+                                        <li><a href="blog-post-right-sidebar.html"><span>Right Sidebar</span></a></li>
+                                        <li><a href="blog-post-no-sidebar.html"><span>No Sidebar</span></a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!--====================  End of mobile menu overlay  ====================-->
+
+
+
+
+
+
+
+    <!--====================  search overlay ====================-->
+    <div class="search-overlay" id="search-overlay">
+
+        <div class="search-overlay__header">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-md-6 ms-auto col-4">
+                        <!-- search content -->
+                        <div class="search-content text-end">
+                            <span class="mobile-navigation-close-icon" id="search-close-trigger"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="search-overlay__inner">
+            <div class="search-overlay__body">
+                <div class="search-overlay__form">
+                    <form action="#">
+                        <input type="text" placeholder="Search">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--====================  End of search overlay  ====================-->
+
+
+
+
+    </body>
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('frontend.layout.app', array_diff_key(get_defined_vars(), ['__data' => 1, '__path' => 1]))->render(); ?><?php /**PATH /Users/susant/Desktop/Work/All nepal tech solution/resources/views/frontend/pages/index.blade.php ENDPATH**/ ?>
